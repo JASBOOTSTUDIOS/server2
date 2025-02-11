@@ -1,4 +1,3 @@
-// src/models/UserModel.ts
 import  conexion  from '../config/db';
 
 export interface User {
@@ -13,6 +12,10 @@ export const UserModel = {
         const [rows] = await conexion.query('SELECT * FROM usersaccess');
         return rows as User[];
     },
+    findUserByEmail: async (email: string) => {
+        const [rows] = await conexion.query("SELECT * FROM users WHERE email = ?", [email]);
+        return (rows as any)[0];
+      },
 
     getUserById: async (id: number): Promise<User | null> => {
         const [rows]: any = await conexion.query('SELECT * FROM usersaccess WHERE id = ?', [id]);
