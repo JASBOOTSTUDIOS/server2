@@ -19,10 +19,10 @@ export const DataUserModel = {
         return rows as DataUser[];
     },
 
-    getDataUserById: async (id: number): Promise<DataUser | null> => {
-        const [rows]: any = await conexion.query('SELECT * FROM data_users WHERE id = ?', [id]);
-        return rows.length > 0 ? rows[0] : null;
-    },
+    // getDataUserById: async (id: number): Promise<DataUser | null> => {
+    //     const [rows]: any = await conexion.query('SELECT * FROM data_users WHERE id = ?', [id]);
+    //     return rows.length > 0 ? rows[0] : null;
+    // },
 
     getDataByUserId: async (user_id: number): Promise<DataUser | null> => {
         const [rows]: any = await conexion.query('SELECT * FROM data_users WHERE user_id = ?', [user_id]);

@@ -1,4 +1,3 @@
-// src/controllers/usersController.ts
 import { Request, Response } from 'express';
 import { UserModel } from '../model/usersAccessModel';
 import { DataUserModel } from '../model/dataUsersModel';
