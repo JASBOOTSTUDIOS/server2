@@ -1,0 +1,8 @@
+// Direccion de MYSQL https://www.phpmyadmin.co/sql.php?db=sql5762123&goto=db_structure.php&table=usersaccess&pos=0
+// Free Sql Data Base.
+
+DB_HOST= sql5.freesqldatabase.com
+DB_USER= sql5762123
+DB_PASSWORD= kMD6dUdQNy
+DB_NAME= sql5762123
+DB_PORT=3306
