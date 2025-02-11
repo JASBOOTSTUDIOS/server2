@@ -1,5 +1,8 @@
-// Direccion de MYSQL https://www.phpmyadmin.co/sql.php?db=sql5762123&goto=db_structure.php&table=usersaccess&pos=0
+// Direccion de MYSQL> ► https://www.phpmyadmin.co/sql.php?db=sql5762123&goto=db_structure.php&table=usersaccess&pos=0
+
+// Ubicacion de la api: ► https://dashboard.render.com/
 // Free Sql Data Base.
+
 
 DB_HOST= sql5.freesqldatabase.com
 DB_USER= sql5762123
