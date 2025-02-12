@@ -13,7 +13,7 @@ app.use(express.json());
 app.use("/api/protected", protectedRoutes);
 app.use("/api/users", userRoutes);
 app.use("/", usersAccessRoutes);
-app.use("/api", authRoutes);
+app.use("/auth", authRoutes);
 
 const PORT = process.env.SERVER_PORT;
 app.listen(PORT, () => {
