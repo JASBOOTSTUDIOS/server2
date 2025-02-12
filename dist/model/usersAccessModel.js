@@ -13,12 +13,15 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.UserModel = void 0;
-// src/models/UserModel.ts
 const db_1 = __importDefault(require("../config/db"));
 exports.UserModel = {
     getAllUsers: () => __awaiter(void 0, void 0, void 0, function* () {
         const [rows] = yield db_1.default.query('SELECT * FROM usersaccess');
         return rows;
+    }),
+    findUserByEmail: (email) => __awaiter(void 0, void 0, void 0, function* () {
+        const [rows] = yield db_1.default.query("SELECT * FROM usersaccess WHERE email = ?", [email]);
+        return rows[0];
     }),
     getUserById: (id) => __awaiter(void 0, void 0, void 0, function* () {
         const [rows] = yield db_1.default.query('SELECT * FROM usersaccess WHERE id = ?', [id]);
