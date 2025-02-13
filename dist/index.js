@@ -15,7 +15,7 @@ app.use(express_1.default.json());
 app.use("/api/protected", protectedRoutes_1.default);
 app.use("/api/users", users_1.default);
 app.use("/", usersRouter_1.default);
-app.use("/api", authRoutes_1.default);
+app.use("/auth", authRoutes_1.default);
 const PORT = process.env.SERVER_PORT;
 app.listen(PORT, () => {
     console.log(`Servidor corriendo en http://localhost:${PORT}`);
